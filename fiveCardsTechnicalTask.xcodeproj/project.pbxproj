@@ -15,6 +15,7 @@
 		ED65AFFC1FA9CB610067D01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFFA1FA9CB610067D01B /* LaunchScreen.storyboard */; };
 		ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0031FA9D2D10067D01B /* RoundedButton.swift */; };
 		ED65B0061FA9D2D10067D01B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0041FA9D2D10067D01B /* RoundedView.swift */; };
+		ED65B0091FA9D53B0067D01B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0081FA9D53A0067D01B /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ED65AFFD1FA9CB610067D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED65B0031FA9D2D10067D01B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		ED65B0041FA9D2D10067D01B /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		ED65B0081FA9D53A0067D01B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				ED65AFF11FA9CB610067D01B /* AppDelegate.swift */,
 				ED65AFF31FA9CB610067D01B /* ViewController.swift */,
+				ED65B0081FA9D53A0067D01B /* CardView.swift */,
 				ED65AFF51FA9CB610067D01B /* Main.storyboard */,
 				ED65B0071FA9D2D70067D01B /* Rounded Views */,
 				ED65AFF81FA9CB610067D01B /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 				ED65AFF41FA9CB610067D01B /* ViewController.swift in Sources */,
 				ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */,
 				ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */,
+				ED65B0091FA9D53B0067D01B /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
