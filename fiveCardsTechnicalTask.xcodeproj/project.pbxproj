@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E0DD2974D6103964F10CB9FC /* Pods_fiveCardsTechnicalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */; };
+		ED155A561FAA12E200789E88 /* ContantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED155A551FAA12E200789E88 /* ContantsViewController.swift */; };
 		ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF11FA9CB610067D01B /* AppDelegate.swift */; };
 		ED65AFF41FA9CB610067D01B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF31FA9CB610067D01B /* MainViewController.swift */; };
 		ED65AFF71FA9CB610067D01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFF51FA9CB610067D01B /* Main.storyboard */; };
@@ -21,12 +22,14 @@
 		ED65B0111FA9EAC50067D01B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */; };
 		ED65B0131FA9EACF0067D01B /* RandomTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */; };
 		ED65B0151FA9EB760067D01B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0141FA9EB760067D01B /* UserTableViewCell.swift */; };
+		ED9D74721FAA159100F8A699 /* RoundedImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D74711FAA159100F8A699 /* RoundedImageVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiveCardsTechnicalTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC8D7555C1F5B59CA8B9261 /* Pods-fiveCardsTechnicalTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiveCardsTechnicalTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask.release.xcconfig"; sourceTree = "<group>"; };
 		B81BD72CF9364F7533430CFD /* Pods-fiveCardsTechnicalTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiveCardsTechnicalTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask.debug.xcconfig"; sourceTree = "<group>"; };
+		ED155A551FAA12E200789E88 /* ContantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContantsViewController.swift; sourceTree = "<group>"; };
 		ED65AFEE1FA9CB610067D01B /* fiveCardsTechnicalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiveCardsTechnicalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65AFF11FA9CB610067D01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED65AFF31FA9CB610067D01B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTodoViewController.swift; sourceTree = "<group>"; };
 		ED65B0141FA9EB760067D01B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		ED9D74711FAA159100F8A699 /* RoundedImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				ED65B0161FA9EB7B0067D01B /* Users Scene */,
 				ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */,
 				ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */,
+				ED155A551FAA12E200789E88 /* ContantsViewController.swift */,
 				ED65AFF51FA9CB610067D01B /* Main.storyboard */,
 				ED65B0071FA9D2D70067D01B /* Rounded Views */,
 				ED65AFF81FA9CB610067D01B /* Assets.xcassets */,
@@ -113,6 +118,7 @@
 		ED65B0071FA9D2D70067D01B /* Rounded Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED9D74711FAA159100F8A699 /* RoundedImageVIew.swift */,
 				ED65B0031FA9D2D10067D01B /* RoundedButton.swift */,
 				ED65B0041FA9D2D10067D01B /* RoundedView.swift */,
 			);
@@ -265,7 +271,9 @@
 				ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */,
 				ED65B0111FA9EAC50067D01B /* PhotoViewController.swift in Sources */,
 				ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */,
+				ED9D74721FAA159100F8A699 /* RoundedImageVIew.swift in Sources */,
 				ED65B0131FA9EACF0067D01B /* RandomTodoViewController.swift in Sources */,
+				ED155A561FAA12E200789E88 /* ContantsViewController.swift in Sources */,
 				ED65B00B1FA9EA9B0067D01B /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

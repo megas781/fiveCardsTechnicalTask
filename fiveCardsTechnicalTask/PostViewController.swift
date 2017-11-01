@@ -18,6 +18,7 @@ class PostViewController: UIViewController {
    
    var nValue: Int!
    
+   //Свойство, определяющее, сгенерированно число n случайно или нет (случайно, если textField был пустым)
    var isRandom: Bool!
    
    override func viewWillAppear(_ animated: Bool) {
@@ -32,9 +33,11 @@ class PostViewController: UIViewController {
       titleLabel.text = "[...loading...]"
       bodyTextView.text = "[...loading...]"
       
+      //Собственно, запрос
+      
       var url = URL.init(string: "https://jsonplaceholder.typicode.com/posts/")!
       url.appendPathComponent("\(n)")
-      print("url: \(url)")
+      
       let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
          if let error = error {
             print("error: \(error.localizedDescription)")

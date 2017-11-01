@@ -14,6 +14,8 @@ class UserTableViewCell: UITableViewCell {
    @IBOutlet weak var emailLabel: UILabel!
    @IBOutlet weak var phoneLabel: UILabel!
    
+   
+   //Функция для установки значений outlet'ов. Применяется в cellForRowAtIndexPath
    func setup(withUser user: User) {
       self.nameLabel.text = user.name
       self.emailLabel.text = user.email

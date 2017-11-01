@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 
+//Структура пользователя. Она используется для метода setup(withUser:) класса UserTableViewCell
 struct User {
    var name: String
    var email: String
@@ -17,11 +18,13 @@ struct User {
 
 class UsersViewController: UITableViewController {
    
+   //Здесь будут храниться user'ы
    var userCollection: [User] = []
    
    
    override func viewDidLoad() {
       
+      //Убираем начальные линии
       self.tableView.tableFooterView = UIView.init(frame: CGRect.zero)
       
    }
@@ -63,10 +66,9 @@ class UsersViewController: UITableViewController {
          }
          
          DispatchQueue.main.async {
+            //Вместо self.tableView.ReloadData() делаю таким образом для красивой анимации))
             self.tableView.beginUpdates()
-            
             self.tableView.insertRows(at: (0...4).map({ return IndexPath.init(row: $0, section: 0)}), with: .automatic)
-            
             self.tableView.endUpdates()
          }
       }
@@ -74,6 +76,8 @@ class UsersViewController: UITableViewController {
       session.resume()
       
    }
+   
+   //После ухода с viewController'a обнуляю userColelction (может и напрасно, потому что произойдет deinit и данные исчезнут)
    override func viewWillDisappear(_ animated: Bool) {
       self.userCollection = []
    }

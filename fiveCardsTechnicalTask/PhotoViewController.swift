@@ -38,8 +38,6 @@ class PhotoViewController: UIViewController {
          
          let imageURL = URL.init(string: json["url"].string!)!
          
-         print("imageURL: \(imageURL)")
-         
          let imageSession = URLSession.shared.dataTask(with: imageURL, completionHandler: { (data, response, error) in
             
             if let error = error {
