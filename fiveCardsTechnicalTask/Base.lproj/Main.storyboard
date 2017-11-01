@@ -49,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="-1436" y="-319"/>
         </scene>
-        <!--Задания-->
+        <!--Карточки-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="fiveCardsTechnicalTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -375,7 +375,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Задания" id="B7L-Zp-IeX"/>
+                    <navigationItem key="navigationItem" title="Карточки" id="B7L-Zp-IeX"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="commentNValueTextField" destination="xBP-5C-7Bc" id="Etn-Od-YOu"/>
@@ -534,12 +534,12 @@
         <scene sceneID="afd-Ov-VEe">
             <objects>
                 <tableViewController id="4yI-aV-fDn" customClass="UsersViewController" customModule="fiveCardsTechnicalTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rJb-fg-bRe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" estimatedRowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="rJb-fg-bRe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.48694413900375366" green="0.96975713968276978" blue="0.77785384654998779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="221-it-LkF" customClass="UserTableViewCell" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="110" id="221-it-LkF" customClass="UserTableViewCell" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="221-it-LkF" id="3xR-PR-u1s">

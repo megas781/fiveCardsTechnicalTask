@@ -14,4 +14,10 @@ class UserTableViewCell: UITableViewCell {
    @IBOutlet weak var emailLabel: UILabel!
    @IBOutlet weak var phoneLabel: UILabel!
    
+   func setup(withUser user: User) {
+      self.nameLabel.text = user.name
+      self.emailLabel.text = user.email
+      self.phoneLabel.text = user.phone
+   }
+   
 }
