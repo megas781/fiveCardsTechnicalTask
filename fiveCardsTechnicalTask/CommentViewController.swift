@@ -14,6 +14,7 @@ class CommentViewController: UIViewController {
    @IBOutlet weak var emailLabel: UILabel!
    @IBOutlet weak var bodyTextView: UITextView!
    
+   var nValue : Int!
    
    override func viewDidLoad() {
       super.viewDidLoad()

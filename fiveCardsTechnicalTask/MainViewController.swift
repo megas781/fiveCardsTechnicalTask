@@ -28,15 +28,29 @@ class MainViewController: UIViewController {
       
       switch segue.identifier! {
       case "fromMainToPostViewControllerSegueIdentifier":
-         break
+         print("fromMainToPostViewControllerSegueIdentifier")
+         
+         let dvc = segue.destination as! PostViewController
+         print("self.postNValueTextField.text: \(self.postNValueTextField.text)")
+//         print("Int(self.postNValueTextField.text!)!")
+         dvc.nValue = ((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil)) ? Int(self.postNValueTextField.text!)! : (1 + Int(arc4random_uniform(99)))
+         
       case "fromMainToCommentViewControllerSegueIdentifier":
-         break
+         print("fromMainToCommentViewControllerSegueIdentifier")
+         
+         
       case "fromMainToUsersViewControllerSegueIdentifier":
-         break 
+         print("fromMainToUsersViewControllerSegueIdentifier")
+         
+         
       case "fromMainToPhotoViewControllerSegueIdentifier":
-         break 
+         print("fromMainToPhotoViewControllerSegueIdentifier")
+         
+         
       case "fromMainToRandomTodoViewControllerSegueIdentifier":
-         break
+         print("fromMainToRandomTodoViewControllerSegueIdentifier")
+         
+         
       default:
          fatalError("Что-то намудрил с segue identifier'ами")
       }
