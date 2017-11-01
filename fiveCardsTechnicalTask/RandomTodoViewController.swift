@@ -10,9 +10,10 @@ import UIKit
 
 class RandomTodoViewController: UIViewController {
    
-   @IBOutlet weak var isCompletedLabel: UILabel!
    
+   @IBOutlet weak var isCompletedLabel: UILabel!
    @IBOutlet weak var bodyLabel: UILabel!
+   
    
    
    override func viewDidLoad() {

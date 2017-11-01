@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAK-Z6-RVy">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -57,11 +57,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="887"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-yS-fab">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-yS-fab">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="887"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJp-EC-2qZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="887"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="704"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="j8G-kU-JQF">
                                                 <rect key="frame" x="16" y="20" width="288" height="664"/>
@@ -352,9 +352,11 @@
                                             <constraint firstAttribute="trailing" secondItem="j8G-kU-JQF" secondAttribute="trailing" constant="16" id="7qn-5C-wgE"/>
                                             <constraint firstItem="j8G-kU-JQF" firstAttribute="leading" secondItem="KJp-EC-2qZ" secondAttribute="leading" constant="16" id="RZb-ks-Igq"/>
                                             <constraint firstItem="j8G-kU-JQF" firstAttribute="top" secondItem="KJp-EC-2qZ" secondAttribute="top" constant="20" id="Zo1-Pu-PIy"/>
+                                            <constraint firstAttribute="height" constant="704" id="hEh-Zv-JkO"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.49923165532854363" green="1" blue="0.80761063662556953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="KJp-EC-2qZ" firstAttribute="leading" secondItem="0kT-yS-fab" secondAttribute="leading" id="H42-rs-jn8"/>
                                     <constraint firstItem="KJp-EC-2qZ" firstAttribute="top" secondItem="0kT-yS-fab" secondAttribute="top" id="MaG-ZW-TS8"/>
@@ -370,7 +372,6 @@
                             <constraint firstItem="0kT-yS-fab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eau-EY-iJV"/>
                             <constraint firstItem="0kT-yS-fab" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Sqp-er-Be2"/>
                             <constraint firstItem="0kT-yS-fab" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZxF-oE-IZM"/>
-                            <constraint firstItem="KJp-EC-2qZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="o8G-nB-dJ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -379,12 +380,11 @@
                     <connections>
                         <outlet property="commentNValueTextField" destination="xBP-5C-7Bc" id="Etn-Od-YOu"/>
                         <outlet property="postNValueTextField" destination="LkP-At-Hxh" id="PE6-mn-ASa"/>
-                        <outlet property="postsView" destination="WfE-ac-zPr" id="CYy-vM-E5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-203" y="-274"/>
+            <point key="canvasLocation" x="-204.375" y="-274.64788732394368"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="sPL-02-d7P">

@@ -14,10 +14,7 @@ class PhotoViewController: UIViewController {
    
    @IBOutlet weak var theImageView: UIImageView!
    
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      
-      // Do any additional setup after loading the view.
-   }
+   
+   
    
 }
