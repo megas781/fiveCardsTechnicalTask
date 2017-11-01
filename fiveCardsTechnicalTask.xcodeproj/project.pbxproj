@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		E0DD2974D6103964F10CB9FC /* Pods_fiveCardsTechnicalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */; };
 		ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF11FA9CB610067D01B /* AppDelegate.swift */; };
-		ED65AFF41FA9CB610067D01B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF31FA9CB610067D01B /* ViewController.swift */; };
+		ED65AFF41FA9CB610067D01B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF31FA9CB610067D01B /* MainViewController.swift */; };
 		ED65AFF71FA9CB610067D01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFF51FA9CB610067D01B /* Main.storyboard */; };
 		ED65AFF91FA9CB610067D01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFF81FA9CB610067D01B /* Assets.xcassets */; };
 		ED65AFFC1FA9CB610067D01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFFA1FA9CB610067D01B /* LaunchScreen.storyboard */; };
 		ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0031FA9D2D10067D01B /* RoundedButton.swift */; };
 		ED65B0061FA9D2D10067D01B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0041FA9D2D10067D01B /* RoundedView.swift */; };
-		ED65B0091FA9D53B0067D01B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0081FA9D53A0067D01B /* CardView.swift */; };
+		ED65B00B1FA9EA9B0067D01B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B00A1FA9EA9B0067D01B /* PostViewController.swift */; };
+		ED65B00D1FA9EAAE0067D01B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B00C1FA9EAAE0067D01B /* CommentViewController.swift */; };
+		ED65B00F1FA9EABC0067D01B /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B00E1FA9EABC0067D01B /* UsersViewController.swift */; };
+		ED65B0111FA9EAC50067D01B /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */; };
+		ED65B0131FA9EACF0067D01B /* RandomTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */; };
+		ED65B0151FA9EB760067D01B /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0141FA9EB760067D01B /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,14 +29,19 @@
 		B81BD72CF9364F7533430CFD /* Pods-fiveCardsTechnicalTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiveCardsTechnicalTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask.debug.xcconfig"; sourceTree = "<group>"; };
 		ED65AFEE1FA9CB610067D01B /* fiveCardsTechnicalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiveCardsTechnicalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65AFF11FA9CB610067D01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED65AFF31FA9CB610067D01B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED65AFF31FA9CB610067D01B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ED65AFF61FA9CB610067D01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED65AFF81FA9CB610067D01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED65AFFB1FA9CB610067D01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED65AFFD1FA9CB610067D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED65B0031FA9D2D10067D01B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		ED65B0041FA9D2D10067D01B /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
-		ED65B0081FA9D53A0067D01B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ED65B00A1FA9EA9B0067D01B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		ED65B00C1FA9EAAE0067D01B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		ED65B00E1FA9EABC0067D01B /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTodoViewController.swift; sourceTree = "<group>"; };
+		ED65B0141FA9EB760067D01B /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +95,12 @@
 			isa = PBXGroup;
 			children = (
 				ED65AFF11FA9CB610067D01B /* AppDelegate.swift */,
-				ED65AFF31FA9CB610067D01B /* ViewController.swift */,
-				ED65B0081FA9D53A0067D01B /* CardView.swift */,
+				ED65AFF31FA9CB610067D01B /* MainViewController.swift */,
+				ED65B00A1FA9EA9B0067D01B /* PostViewController.swift */,
+				ED65B00C1FA9EAAE0067D01B /* CommentViewController.swift */,
+				ED65B0161FA9EB7B0067D01B /* Users Scene */,
+				ED65B0101FA9EAC50067D01B /* PhotoViewController.swift */,
+				ED65B0121FA9EACF0067D01B /* RandomTodoViewController.swift */,
 				ED65AFF51FA9CB610067D01B /* Main.storyboard */,
 				ED65B0071FA9D2D70067D01B /* Rounded Views */,
 				ED65AFF81FA9CB610067D01B /* Assets.xcassets */,
@@ -103,6 +117,15 @@
 				ED65B0041FA9D2D10067D01B /* RoundedView.swift */,
 			);
 			path = "Rounded Views";
+			sourceTree = "<group>";
+		};
+		ED65B0161FA9EB7B0067D01B /* Users Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ED65B00E1FA9EABC0067D01B /* UsersViewController.swift */,
+				ED65B0141FA9EB760067D01B /* UserTableViewCell.swift */,
+			);
+			path = "Users Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,10 +258,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED65B0061FA9D2D10067D01B /* RoundedView.swift in Sources */,
-				ED65AFF41FA9CB610067D01B /* ViewController.swift in Sources */,
+				ED65AFF41FA9CB610067D01B /* MainViewController.swift in Sources */,
+				ED65B00D1FA9EAAE0067D01B /* CommentViewController.swift in Sources */,
+				ED65B00F1FA9EABC0067D01B /* UsersViewController.swift in Sources */,
+				ED65B0151FA9EB760067D01B /* UserTableViewCell.swift in Sources */,
 				ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */,
+				ED65B0111FA9EAC50067D01B /* PhotoViewController.swift in Sources */,
 				ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */,
-				ED65B0091FA9D53B0067D01B /* CardView.swift in Sources */,
+				ED65B0131FA9EACF0067D01B /* RandomTodoViewController.swift in Sources */,
+				ED65B00B1FA9EA9B0067D01B /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
