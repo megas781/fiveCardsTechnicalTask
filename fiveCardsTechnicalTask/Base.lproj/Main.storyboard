@@ -634,7 +634,7 @@ My name is Gleb Kalachev!</string>
         <scene sceneID="1bj-cV-PI1">
             <objects>
                 <navigationController id="dVb-pO-zae" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="m6E-Vt-joe"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="m6E-Vt-joe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jAv-Cv-qcR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
