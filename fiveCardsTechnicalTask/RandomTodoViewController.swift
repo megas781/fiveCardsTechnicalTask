@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class RandomTodoViewController: UIViewController {
    
    
@@ -15,27 +15,38 @@ class RandomTodoViewController: UIViewController {
    @IBOutlet weak var bodyLabel: UILabel!
    
    
-   
-   override func viewDidLoad() {
-      super.viewDidLoad()
+   override func viewWillAppear(_ animated: Bool) {
       
-      // Do any additional setup after loading the view.
+      self.isCompletedLabel.text = "[...loading...]"
+      self.bodyLabel.text = "[...loading...]"
+      
+      let url = URL.init(string: "https://jsonplaceholder.typicode.com/todos")!
+      
+      let randomIndex = Int(arc4random_uniform(200))
+      
+      let session = URLSession.shared.dataTask(with: url.appendingPathComponent("/\(randomIndex)")) { (data, response, error) in
+         if let error = error {
+            print("error: \(error.localizedDescription)")
+         }
+         
+         guard let data = data else {
+            print("coundn't retrieve data")
+            return
+         }
+         
+         let json = JSON.init(data: data)
+         
+         DispatchQueue.main.async {
+            
+            self.isCompletedLabel.text = json["completed"].bool! ? "[completed]" : "[uncompleted]"
+            self.bodyLabel.text = json["title"].string
+            
+         }
+         
+      }
+      
+      session.resume()
+      
    }
-   
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
-   }
-   
-   
-   /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
    
 }

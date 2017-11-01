@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+
 struct User {
    var name: String
    var email: String
