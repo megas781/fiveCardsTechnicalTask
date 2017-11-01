@@ -14,12 +14,17 @@ class MainViewController: UIViewController {
    @IBOutlet weak var postNValueTextField: UITextField!
    @IBOutlet weak var commentNValueTextField: UITextField!
    
+   @IBOutlet var primeViewsCollection: [UIView]!
    
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
+      for view in self.primeViewsCollection {
+         let gr = UITapGestureRecognizer.init(target: self, action: #selector(self.resignAnyFirstResponder))
+         view.addGestureRecognizer(gr)
+      }
       
       
    }
@@ -56,6 +61,11 @@ class MainViewController: UIViewController {
       }
       
       
+   }
+   
+   @objc func resignAnyFirstResponder() {
+      self.postNValueTextField.resignFirstResponder()
+      self.commentNValueTextField.resignFirstResponder()
    }
    
 
