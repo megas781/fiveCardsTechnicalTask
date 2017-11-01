@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
          let gr = UITapGestureRecognizer.init(target: self, action: #selector(self.resignAnyFirstResponder))
          view.addGestureRecognizer(gr)
       }
+    
       
       
    }
@@ -38,12 +39,18 @@ class MainViewController: UIViewController {
          let dvc = segue.destination as! PostViewController
          print("self.postNValueTextField.text: \(self.postNValueTextField.text)")
 //         print("Int(self.postNValueTextField.text!)!")
-         dvc.nValue = ((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil)) ? Int(self.postNValueTextField.text!)! : (1 + Int(arc4random_uniform(99)))
+         dvc.nValue = ((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil)) ? Int(self.postNValueTextField.text!)! : (1 + Int(arc4random_uniform(100)))
+         
+         dvc.isRandom = !((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil))
          
       case "fromMainToCommentViewControllerSegueIdentifier":
          print("fromMainToCommentViewControllerSegueIdentifier")
          let dvc = segue.destination as! CommentViewController
          dvc.nValue = ((self.commentNValueTextField.text != "") && (self.commentNValueTextField.text != nil)) ? Int(self.commentNValueTextField.text!)! : (1 + Int(arc4random_uniform(499)))
+         
+         dvc.isRandom = !((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil))
+         
+         
          
       case "fromMainToUsersViewControllerSegueIdentifier":
          print("fromMainToUsersViewControllerSegueIdentifier")
