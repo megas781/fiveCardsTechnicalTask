@@ -6,6 +6,11 @@
 //  Copyright © 2017 Gleb Kalachev. All rights reserved.
 //
 
+/*
+ Ремарки:
+    - Сделал так, при нажатии на кнопки первых двух карточек, в случае если textField.text пустой или равен nil, то число N генерируется рандомно. В правом нижнем углу (Post/Comment)ViewController'a будет отображаться, рандомное значение или нет.
+ */
+
 import UIKit
 import SwiftyJSON
 class MainViewController: UIViewController {
