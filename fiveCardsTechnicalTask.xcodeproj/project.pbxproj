@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0DD2974D6103964F10CB9FC /* Pods_fiveCardsTechnicalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */; };
 		ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF11FA9CB610067D01B /* AppDelegate.swift */; };
 		ED65AFF41FA9CB610067D01B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65AFF31FA9CB610067D01B /* ViewController.swift */; };
 		ED65AFF71FA9CB610067D01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFF51FA9CB610067D01B /* Main.storyboard */; };
 		ED65AFF91FA9CB610067D01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFF81FA9CB610067D01B /* Assets.xcassets */; };
 		ED65AFFC1FA9CB610067D01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED65AFFA1FA9CB610067D01B /* LaunchScreen.storyboard */; };
+		ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0031FA9D2D10067D01B /* RoundedButton.swift */; };
+		ED65B0061FA9D2D10067D01B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65B0041FA9D2D10067D01B /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiveCardsTechnicalTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC8D7555C1F5B59CA8B9261 /* Pods-fiveCardsTechnicalTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiveCardsTechnicalTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask.release.xcconfig"; sourceTree = "<group>"; };
+		B81BD72CF9364F7533430CFD /* Pods-fiveCardsTechnicalTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiveCardsTechnicalTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask.debug.xcconfig"; sourceTree = "<group>"; };
 		ED65AFEE1FA9CB610067D01B /* fiveCardsTechnicalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiveCardsTechnicalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED65AFF11FA9CB610067D01B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED65AFF31FA9CB610067D01B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		ED65AFF81FA9CB610067D01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED65AFFB1FA9CB610067D01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED65AFFD1FA9CB610067D01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED65B0031FA9D2D10067D01B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		ED65B0041FA9D2D10067D01B /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DD2974D6103964F10CB9FC /* Pods_fiveCardsTechnicalTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540BAA85231D4A1DE2572A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73E3AE793A921C8C66D3DDB2 /* Pods_fiveCardsTechnicalTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805CC266CD5FE61297974ED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B81BD72CF9364F7533430CFD /* Pods-fiveCardsTechnicalTask.debug.xcconfig */,
+				9AC8D7555C1F5B59CA8B9261 /* Pods-fiveCardsTechnicalTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED65AFE51FA9CB610067D01B = {
 			isa = PBXGroup;
 			children = (
 				ED65AFF01FA9CB610067D01B /* fiveCardsTechnicalTask */,
 				ED65AFEF1FA9CB610067D01B /* Products */,
+				805CC266CD5FE61297974ED8 /* Pods */,
+				540BAA85231D4A1DE2572A8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +85,21 @@
 				ED65AFF11FA9CB610067D01B /* AppDelegate.swift */,
 				ED65AFF31FA9CB610067D01B /* ViewController.swift */,
 				ED65AFF51FA9CB610067D01B /* Main.storyboard */,
+				ED65B0071FA9D2D70067D01B /* Rounded Views */,
 				ED65AFF81FA9CB610067D01B /* Assets.xcassets */,
 				ED65AFFA1FA9CB610067D01B /* LaunchScreen.storyboard */,
 				ED65AFFD1FA9CB610067D01B /* Info.plist */,
 			);
 			path = fiveCardsTechnicalTask;
+			sourceTree = "<group>";
+		};
+		ED65B0071FA9D2D70067D01B /* Rounded Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED65B0031FA9D2D10067D01B /* RoundedButton.swift */,
+				ED65B0041FA9D2D10067D01B /* RoundedView.swift */,
+			);
+			path = "Rounded Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED65B0001FA9CB610067D01B /* Build configuration list for PBXNativeTarget "fiveCardsTechnicalTask" */;
 			buildPhases = (
+				5C791D1FA2359A8F9EE06FD7 /* [CP] Check Pods Manifest.lock */,
 				ED65AFEA1FA9CB610067D01B /* Sources */,
 				ED65AFEB1FA9CB610067D01B /* Frameworks */,
 				ED65AFEC1FA9CB610067D01B /* Resources */,
+				90C73516DB2CF469E9D0E4BD /* [CP] Embed Pods Frameworks */,
+				3158008BB93DA03C4ED8A524 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +172,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3158008BB93DA03C4ED8A524 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C791D1FA2359A8F9EE06FD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fiveCardsTechnicalTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C73516DB2CF469E9D0E4BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiveCardsTechnicalTask/Pods-fiveCardsTechnicalTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED65AFEA1FA9CB610067D01B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED65B0061FA9D2D10067D01B /* RoundedView.swift in Sources */,
 				ED65AFF41FA9CB610067D01B /* ViewController.swift in Sources */,
+				ED65B0051FA9D2D10067D01B /* RoundedButton.swift in Sources */,
 				ED65AFF21FA9CB610067D01B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +369,7 @@
 		};
 		ED65B0011FA9CB610067D01B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81BD72CF9364F7533430CFD /* Pods-fiveCardsTechnicalTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +385,7 @@
 		};
 		ED65B0021FA9CB610067D01B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC8D7555C1F5B59CA8B9261 /* Pods-fiveCardsTechnicalTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
