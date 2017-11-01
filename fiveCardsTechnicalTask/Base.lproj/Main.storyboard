@@ -429,10 +429,18 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3D-s4-o4g">
+                                                <rect key="frame" x="258.5" y="358" width="53.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.48736213239999998" green="0.4921875" blue="0.4921875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Vsr-bX-SUF" secondAttribute="trailing" constant="8" id="2nd-zY-5Cr"/>
                                             <constraint firstItem="Vsr-bX-SUF" firstAttribute="top" secondItem="bgz-8p-jMj" secondAttribute="top" id="Awg-T1-awd"/>
+                                            <constraint firstAttribute="bottom" secondItem="R3D-s4-o4g" secondAttribute="bottom" constant="4" id="BhV-dn-UUu"/>
+                                            <constraint firstAttribute="trailing" secondItem="R3D-s4-o4g" secondAttribute="trailing" constant="8" id="Lay-HF-LX4"/>
                                             <constraint firstItem="Vsr-bX-SUF" firstAttribute="leading" secondItem="bgz-8p-jMj" secondAttribute="leading" constant="8" id="TfP-Nx-dUf"/>
                                             <constraint firstAttribute="bottom" secondItem="Vsr-bX-SUF" secondAttribute="bottom" constant="8" id="mpo-DE-Uud"/>
                                         </constraints>
@@ -454,6 +462,7 @@
                     </view>
                     <connections>
                         <outlet property="bodyTextView" destination="Vsr-bX-SUF" id="RGo-IU-9pj"/>
+                        <outlet property="isRandomIndicator" destination="R3D-s4-o4g" id="Uui-7X-8RL"/>
                         <outlet property="titleLabel" destination="IcZ-1e-fDU" id="aiO-L6-0JC"/>
                     </connections>
                 </viewController>
@@ -707,7 +716,7 @@
                                         <rect key="frame" x="0.0" y="82.5" width="304" height="364.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZg-RR-cH7" customClass="RoundedView" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="364.5"/>
+                                                <rect key="frame" x="0.0" y="-0.5" width="304" height="364.5"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="K1w-Oa-co3">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="364.5"/>
@@ -729,11 +738,19 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzv-HV-jpR">
+                                                <rect key="frame" x="242.5" y="343.5" width="53.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.48736213235294118" green="0.4921875" blue="0.4921875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="ZZg-RR-cH7" firstAttribute="leading" secondItem="NRh-3W-7ZG" secondAttribute="leading" id="0Oc-aQ-yKr"/>
+                                            <constraint firstAttribute="trailing" secondItem="zzv-HV-jpR" secondAttribute="trailing" constant="8" id="Ev2-M8-wmx"/>
                                             <constraint firstItem="ZZg-RR-cH7" firstAttribute="top" secondItem="NRh-3W-7ZG" secondAttribute="top" id="OEF-MM-su4"/>
                                             <constraint firstAttribute="bottom" secondItem="ZZg-RR-cH7" secondAttribute="bottom" id="Twc-g4-WLm"/>
+                                            <constraint firstAttribute="bottom" secondItem="zzv-HV-jpR" secondAttribute="bottom" constant="4" id="o3v-li-DBK"/>
                                             <constraint firstAttribute="trailing" secondItem="ZZg-RR-cH7" secondAttribute="trailing" id="q3b-yV-bhb"/>
                                         </constraints>
                                     </view>
@@ -755,6 +772,7 @@
                     <connections>
                         <outlet property="bodyTextView" destination="K1w-Oa-co3" id="4WF-rl-qaD"/>
                         <outlet property="emailLabel" destination="pa9-oj-WIe" id="HYW-Xu-2sE"/>
+                        <outlet property="isRandomIndicator" destination="zzv-HV-jpR" id="ShF-fd-rEh"/>
                         <outlet property="nameLabel" destination="U8S-a3-ciG" id="bhd-8j-jLd"/>
                     </connections>
                 </viewController>

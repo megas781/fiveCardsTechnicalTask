@@ -14,16 +14,20 @@ class CommentViewController: UIViewController {
    @IBOutlet weak var emailLabel: UILabel!
    @IBOutlet weak var bodyTextView: UITextView!
    
+   @IBOutlet weak var isRandomIndicator: UILabel!
+   
    var nValue : Int!
    
+   var isRandom: Bool!
    
    override func viewWillAppear(_ animated: Bool) {
+      
+      self.isRandomIndicator.isHidden = !self.isRandom
       
       guard let n = nValue else {
          print("couldn't retrieve nValue in CommentViewCOntroller")
          return
       }
-      
       
       print("n: \(n)")
       nameLabel.text = "[...loading...]"

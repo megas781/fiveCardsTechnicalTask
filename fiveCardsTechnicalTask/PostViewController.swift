@@ -14,9 +14,16 @@ class PostViewController: UIViewController {
    @IBOutlet weak var titleLabel: UILabel!
    @IBOutlet weak var bodyTextView: UITextView!
    
+   @IBOutlet weak var isRandomIndicator: UILabel!
+   
    var nValue: Int!
    
+   var isRandom: Bool!
+   
    override func viewWillAppear(_ animated: Bool) {
+      
+      self.isRandomIndicator.isHidden = !self.isRandom
+      
       guard let n = nValue else {
          print("Не смогу извлечь nValue в PostViewController'е")
          return
