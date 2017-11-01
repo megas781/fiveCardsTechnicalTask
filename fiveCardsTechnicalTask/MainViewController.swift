@@ -42,7 +42,8 @@ class MainViewController: UIViewController {
          
       case "fromMainToCommentViewControllerSegueIdentifier":
          print("fromMainToCommentViewControllerSegueIdentifier")
-         
+         let dvc = segue.destination as! CommentViewController
+         dvc.nValue = ((self.commentNValueTextField.text != "") && (self.commentNValueTextField.text != nil)) ? Int(self.commentNValueTextField.text!)! : (1 + Int(arc4random_uniform(499)))
          
       case "fromMainToUsersViewControllerSegueIdentifier":
          print("fromMainToUsersViewControllerSegueIdentifier")

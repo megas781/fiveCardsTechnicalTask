@@ -22,6 +22,9 @@ class PostViewController: UIViewController {
          return
       }
       
+      titleLabel.text = "[...loading...]"
+      bodyTextView.text = "[...loading...]"
+      
       var url = URL.init(string: "https://jsonplaceholder.typicode.com/posts/")!
       url.appendPathComponent("\(n)")
       print("url: \(url)")
