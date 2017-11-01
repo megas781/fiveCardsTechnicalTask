@@ -24,6 +24,7 @@ class UsersViewController: UITableViewController {
    
    override func viewDidLoad() {
       
+      self.title = "First Five Users"
       //Убираем начальные линии
       self.tableView.tableFooterView = UIView.init(frame: CGRect.zero)
       

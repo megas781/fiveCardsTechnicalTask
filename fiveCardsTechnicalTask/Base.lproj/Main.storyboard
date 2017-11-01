@@ -31,11 +31,11 @@
             </objects>
             <point key="canvasLocation" x="-2349" y="59"/>
         </scene>
-        <!--Карточки-->
+        <!--Cards-->
         <scene sceneID="8qI-xu-fhf">
             <objects>
                 <navigationController id="YaT-sf-RyM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Карточки" id="bwb-RC-xoR"/>
+                    <tabBarItem key="tabBarItem" title="Cards" id="bwb-RC-xoR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="oQw-Pg-5fT">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="-1436" y="-319"/>
         </scene>
-        <!--Карточки-->
+        <!--Cards-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="fiveCardsTechnicalTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,7 +99,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-7N-qOx" customClass="RoundedButton" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                                                 <rect key="frame" x="29" y="82" width="230" height="30"/>
                                                                 <color key="backgroundColor" red="0.41004544266945347" green="0.83649270304568524" blue="0.67572304575948183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Посмотреть n-ый пост">
+                                                                <state key="normal" title="Take a look at N-th post!">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -163,7 +163,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sH-UE-Ad1" customClass="RoundedButton" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                                                 <rect key="frame" x="29" y="82" width="230" height="30"/>
                                                                 <color key="backgroundColor" red="0.41004544269999998" green="0.836492703" blue="0.67572304579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Посмотреть n-ый комментарий">
+                                                                <state key="normal" title="Take a look at N-th comment!">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -206,7 +206,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-Qu-qlG" customClass="RoundedButton" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                                                 <rect key="frame" x="29" y="82" width="230" height="30"/>
                                                                 <color key="backgroundColor" red="0.41004544269999998" green="0.836492703" blue="0.67572304579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Подверить и послать запрос">
+                                                                <state key="normal" title="Get the information!">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -218,7 +218,7 @@
                                                                     <segue destination="4yI-aV-fDn" kind="show" identifier="fromMainToUsersViewControllerSegueIdentifier" id="jUU-Yy-4nc"/>
                                                                 </connections>
                                                             </button>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнайте о первых 5 пользователях!😁 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-st-yrH">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get information about first 5 users! 😁" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-st-yrH">
                                                                 <rect key="frame" x="8" y="45" width="272" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <nil key="textColor"/>
@@ -256,7 +256,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dh-NZ-rm0" customClass="RoundedButton" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                                                 <rect key="frame" x="29" y="82" width="230" height="30"/>
                                                                 <color key="backgroundColor" red="0.41004544269999998" green="0.836492703" blue="0.67572304579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Взглянуть!">
+                                                                <state key="normal" title="Take a look!">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -268,7 +268,7 @@
                                                                     <segue destination="c7i-m4-Zt8" kind="show" identifier="fromMainToPhotoViewControllerSegueIdentifier" id="LYM-W7-60a"/>
                                                                 </connections>
                                                             </button>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Взгляните на 3-е фото!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40e-Yn-46S">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look at the third photo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40e-Yn-46S">
                                                                 <rect key="frame" x="8" y="45" width="272" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -306,7 +306,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86O-P7-E8d" customClass="RoundedButton" customModule="fiveCardsTechnicalTask" customModuleProvider="target">
                                                                 <rect key="frame" x="29" y="82" width="230" height="30"/>
                                                                 <color key="backgroundColor" red="0.41004544269999998" green="0.836492703" blue="0.67572304579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Подверить и послать запрос">
+                                                                <state key="normal" title="I wanna find a todo!">
                                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -318,7 +318,7 @@
                                                                     <segue destination="HZY-wx-U3d" kind="show" identifier="fromMainToRandomTodoViewControllerSegueIdentifier" id="FcF-UJ-Yng"/>
                                                                 </connections>
                                                             </button>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найдите себе случайную задачу!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-3d-z3N">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a random todo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-3d-z3N">
                                                                 <rect key="frame" x="8" y="45" width="272" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -375,7 +375,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Карточки" id="B7L-Zp-IeX"/>
+                    <navigationItem key="navigationItem" title="Cards" id="B7L-Zp-IeX"/>
                     <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="commentNValueTextField" destination="xBP-5C-7Bc" id="Etn-Od-YOu"/>
@@ -502,8 +502,8 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-De-EGD">
                                                     <rect key="frame" x="96" y="8" width="216" height="84"/>
-                                                    <string key="text">Привет, Atlan Team! 
-Меня зовут Калачев Глеб!</string>
+                                                    <string key="text">Hello, Atlan Team! 
+My name is Gleb Kalachev!</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -534,7 +534,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hFH-Tm-Q63">
                                                             <rect key="frame" x="0.0" y="0.0" width="80" height="109.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-QQ-YnZ">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-QQ-YnZ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="22"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -546,19 +546,19 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-D3-0Uz">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VK:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-D3-0Uz">
                                                                     <rect key="frame" x="0.0" y="44" width="80" height="21.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-QE-SKX">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-QE-SKX">
                                                                     <rect key="frame" x="0.0" y="65.5" width="80" height="22"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbK-Ze-Dux">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbK-Ze-Dux">
                                                                     <rect key="frame" x="0.0" y="87.5" width="80" height="22"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -630,11 +630,11 @@
             </objects>
             <point key="canvasLocation" x="-658.125" y="1055.2816901408451"/>
         </scene>
-        <!--Контакты-->
+        <!--Navigation Controller-->
         <scene sceneID="1bj-cV-PI1">
             <objects>
                 <navigationController id="dVb-pO-zae" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Контакты" id="m6E-Vt-joe"/>
+                    <tabBarItem key="tabBarItem" id="m6E-Vt-joe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jAv-Cv-qcR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -672,14 +672,14 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zri-Ay-Snp">
                                                     <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBh-ja-zhG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="36"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBh-ja-zhG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="65.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-eL-OIv">
-                                                            <rect key="frame" x="71.5" y="0.0" width="216.5" height="36"/>
+                                                            <rect key="frame" x="75.5" y="0.0" width="212.5" height="36"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -695,14 +695,14 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OSz-Yp-bZi">
                                                             <rect key="frame" x="0.0" y="0.0" width="288" height="21"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-k0-lOq">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="21"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-k0-lOq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9e-fN-ugF">
-                                                                    <rect key="frame" x="53" y="0.0" width="235" height="21"/>
+                                                                    <rect key="frame" x="53.5" y="0.0" width="234.5" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -712,7 +712,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kgy-ud-0QM">
                                                             <rect key="frame" x="0.0" y="21" width="288" height="20.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB1-zE-Noh">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gB1-zE-Noh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="50.5" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <nil key="textColor"/>

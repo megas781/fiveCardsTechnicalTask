@@ -30,7 +30,9 @@ class CommentViewController: UIViewController {
          return
       }
       
-      //print("n: \(n)")
+      self.title = "Comment #\(n)"
+      
+      
       nameLabel.text = "[...loading...]"
       emailLabel.text = "[...loading...]"
       bodyTextView.text = "[...loading...]"

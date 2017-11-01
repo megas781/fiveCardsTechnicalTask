@@ -21,6 +21,7 @@ class PostViewController: UIViewController {
    //Свойство, определяющее, сгенерированно число n случайно или нет (случайно, если textField был пустым)
    var isRandom: Bool!
    
+   
    override func viewWillAppear(_ animated: Bool) {
       
       self.isRandomIndicator.isHidden = !self.isRandom
@@ -29,6 +30,8 @@ class PostViewController: UIViewController {
          print("Не смогу извлечь nValue в PostViewController'е")
          return
       }
+      
+      self.title = "Post #\(n)"
       
       titleLabel.text = "[...loading...]"
       bodyTextView.text = "[...loading...]"

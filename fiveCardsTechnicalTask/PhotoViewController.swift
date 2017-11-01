@@ -17,6 +17,8 @@ class PhotoViewController: UIViewController {
    
    override func viewWillAppear(_ animated: Bool) {
       
+      self.title = "Photo #3"
+      
       self.titleLabel.text = "[...loading...]"
       
       let session = URLSession.shared.dataTask(with: URL.init(string: "https://jsonplaceholder.typicode.com/photos/3")!) { (data, response, error) in
