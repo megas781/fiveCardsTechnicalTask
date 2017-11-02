@@ -6,6 +6,11 @@
 //  Copyright © 2017 Gleb Kalachev. All rights reserved.
 //
 
+/*
+ Ремарки:
+    - Сделал так, при нажатии на кнопки первых двух карточек, в случае если textField.text пустой или равен nil, то число N генерируется рандомно. В правом нижнем углу (Post/Comment)ViewController'a будет отображаться, рандомное значение или нет.
+ */
+
 import UIKit
 import SwiftyJSON
 class MainViewController: UIViewController {
@@ -21,6 +26,7 @@ class MainViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       
+      //Добавляю "фоновым" view gestureRecognizer, чтобы при нажатии на них убиралась клавиатура
       for view in self.primeViewsCollection {
          let gr = UITapGestureRecognizer.init(target: self, action: #selector(self.resignAnyFirstResponder))
          view.addGestureRecognizer(gr)
@@ -34,17 +40,14 @@ class MainViewController: UIViewController {
       
       switch segue.identifier! {
       case "fromMainToPostViewControllerSegueIdentifier":
-         print("fromMainToPostViewControllerSegueIdentifier")
          
          let dvc = segue.destination as! PostViewController
-         print("self.postNValueTextField.text: \(self.postNValueTextField.text)")
-//         print("Int(self.postNValueTextField.text!)!")
-         dvc.nValue = ((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil)) ? Int(self.postNValueTextField.text!)! : (1 + Int(arc4random_uniform(100)))
          
+         dvc.nValue = ((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil)) ? Int(self.postNValueTextField.text!)! : (1 + Int(arc4random_uniform(100)))
          dvc.isRandom = !((self.postNValueTextField.text != "") && (self.postNValueTextField.text != nil))
          
       case "fromMainToCommentViewControllerSegueIdentifier":
-         print("fromMainToCommentViewControllerSegueIdentifier")
+         
          let dvc = segue.destination as! CommentViewController
          dvc.nValue = ((self.commentNValueTextField.text != "") && (self.commentNValueTextField.text != nil)) ? Int(self.commentNValueTextField.text!)! : (1 + Int(arc4random_uniform(499)))
          
@@ -52,25 +55,27 @@ class MainViewController: UIViewController {
          
          
          
-      case "fromMainToUsersViewControllerSegueIdentifier":
-         print("fromMainToUsersViewControllerSegueIdentifier")
+         //Это всё вроде как ненужные кейсы
+//      case "fromMainToUsersViewControllerSegueIdentifier":
+         //print("fromMainToUsersViewControllerSegueIdentifier")
          
          
-      case "fromMainToPhotoViewControllerSegueIdentifier":
-         print("fromMainToPhotoViewControllerSegueIdentifier")
+//      case "fromMainToPhotoViewControllerSegueIdentifier":
+         //print("fromMainToPhotoViewControllerSegueIdentifier")
          
          
-      case "fromMainToRandomTodoViewControllerSegueIdentifier":
-         print("fromMainToRandomTodoViewControllerSegueIdentifier")
+//      case "fromMainToRandomTodoViewControllerSegueIdentifier":
+         //print("fromMainToRandomTodoViewControllerSegueIdentifier")
          
          
       default:
-         fatalError("Что-то намудрил с segue identifier'ами")
+         break
       }
       
       
    }
    
+   //Метод, прячащий клавиатуру
    @objc func resignAnyFirstResponder() {
       self.postNValueTextField.resignFirstResponder()
       self.commentNValueTextField.resignFirstResponder()

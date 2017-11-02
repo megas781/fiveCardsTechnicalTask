@@ -18,6 +18,7 @@ class CommentViewController: UIViewController {
    
    var nValue : Int!
    
+   //Свойство, определяющее, сгенерированно число n случайно или нет (случайно, если textField был пустым)
    var isRandom: Bool!
    
    override func viewWillAppear(_ animated: Bool) {
@@ -29,7 +30,9 @@ class CommentViewController: UIViewController {
          return
       }
       
-      print("n: \(n)")
+      self.title = "Comment #\(n)"
+      
+      
       nameLabel.text = "[...loading...]"
       emailLabel.text = "[...loading...]"
       bodyTextView.text = "[...loading...]"

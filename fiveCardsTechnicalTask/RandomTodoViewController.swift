@@ -22,7 +22,11 @@ class RandomTodoViewController: UIViewController {
       
       let url = URL.init(string: "https://jsonplaceholder.typicode.com/todos")!
       
-      let randomIndex = Int(arc4random_uniform(200))
+      
+      //Как я выяснил, на сервере 200 todo, так что нужен random [1;200]
+      let randomIndex = 1 + Int(arc4random_uniform(200))
+      
+      self.title = "Todo #\(randomIndex)"
       
       let session = URLSession.shared.dataTask(with: url.appendingPathComponent("/\(randomIndex)")) { (data, response, error) in
          if let error = error {
