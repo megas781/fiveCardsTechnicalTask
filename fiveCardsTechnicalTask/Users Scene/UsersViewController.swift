@@ -23,6 +23,7 @@ class UsersViewController: UITableViewController {
    
    
    override func viewDidLoad() {
+      super.viewDidLoad()
       
       self.title = "First Five Users"
       //Убираем начальные линии
@@ -31,6 +32,7 @@ class UsersViewController: UITableViewController {
    }
    
    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
       
       let url = URL.init(string: "https://jsonplaceholder.typicode.com/users/")!
       
@@ -80,6 +82,7 @@ class UsersViewController: UITableViewController {
    
    //После ухода с viewController'a обнуляю userColelction (может и напрасно, потому что произойдет deinit и данные исчезнут)
    override func viewWillDisappear(_ animated: Bool) {
+      super.viewWillDisappear(animated)
       self.userCollection = []
    }
    

@@ -22,6 +22,7 @@ class CommentViewController: UIViewController {
    var isRandom: Bool!
    
    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
       
       self.isRandomIndicator.isHidden = !self.isRandom
       

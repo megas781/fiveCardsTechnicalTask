@@ -741,6 +741,11 @@ My name is Gleb Kalachev!</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.48694413900375366" green="0.96975713968276978" blue="0.77785384654998779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="emailLabel" destination="N9P-Jc-fZh" id="Rdg-s2-Xhz"/>
+                                    <outlet property="nameLabel" destination="O4E-ie-o5d" id="Xfv-qP-NxG"/>
+                                    <outlet property="phoneLabel" destination="VAo-go-StI" id="eYL-6e-1v8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

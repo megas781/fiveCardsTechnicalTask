@@ -16,6 +16,7 @@ class PhotoViewController: UIViewController {
    
    
    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
       
       self.title = "Photo #3"
       

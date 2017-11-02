@@ -8,5 +8,5 @@
 
 import UIKit
 class ContantsViewController: UITableViewController {
-   
+   //Здесь, походу, ничего делать не нужно
 }

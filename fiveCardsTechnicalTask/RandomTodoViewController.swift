@@ -16,6 +16,7 @@ class RandomTodoViewController: UIViewController {
    
    
    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
       
       self.isCompletedLabel.text = "[...loading...]"
       self.bodyLabel.text = "[...loading...]"
