@@ -470,7 +470,7 @@
             </objects>
             <point key="canvasLocation" x="626" y="-1208"/>
         </scene>
-        <!--Contants View Controller-->
+        <!--My Contacts-->
         <scene sceneID="aJk-TG-Hbe">
             <objects>
                 <tableViewController id="Efh-th-2IH" customClass="ContantsViewController" customModule="fiveCardsTechnicalTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -625,7 +625,7 @@ My name is Gleb Kalachev!</string>
                             <outlet property="delegate" destination="Efh-th-2IH" id="4mT-2z-2Uq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FuI-kp-2ME"/>
+                    <navigationItem key="navigationItem" title="My Contacts" id="FuI-kp-2ME"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="act-Ef-kfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
