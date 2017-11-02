@@ -9,4 +9,8 @@
 import UIKit
 class ContantsViewController: UITableViewController {
    //Здесь, походу, ничего делать не нужно
+   override func viewDidLoad() {
+      self.tableView.tableFooterView = UIView.init(frame: CGRect.zero)
+      self.tableView.tableHeaderView = UIView.init(frame: CGRect.zero)
+   }
 }
